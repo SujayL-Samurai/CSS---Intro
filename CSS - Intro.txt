@@ -1,0 +1,136 @@
+CSS = Cascading Style Sheet
+
+3 methods,
+
+Inline - applying CSS inside of the tags
+
+Internal - using style tags and applying CSS for the other tags inside style tags
+
+External - create a new file style.css and link it to the current file. Apply CSS from new file on the current file
+
+
+Internal;
+
+<!DOCTYPE html>
+<html>
+	<style>
+		body{
+			background-color: black;
+		}
+		h1{
+			color: greenyellow;
+		}
+		p{
+			color: aqua;
+		}
+	</style>
+	<body>
+		<head>
+			<h1>This is my website</h1>
+
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>	
+		</head>
+	</body>
+</html>
+
+
+External;
+create a new file style.css
+
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="style.css"
+	<body>
+		<head>
+			<h1>This is my website</h1>
+
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>	
+		</head>
+	</body>
+</html>
+
+style.css
+
+body{
+    background-color: rgb(18, 25, 227);
+}
+h1{
+    color: rgb(6, 243, 93);
+}
+p{
+    color: rgb(13, 21, 1);
+}
+
+
+Using id= ;
+
+<!DOCTYPE html>
+<html>
+	
+<link rel="stylesheet" href="style.css">
+	<body>
+		<head>
+			<h1>This is my website</h1>
+
+		<p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>	
+		</head>
+	</body>
+</html>
+
+style.css
+
+body{
+    background-color: rgb(18, 25, 227);
+}
+h1{
+    color: rgb(6, 243, 93);
+}
+#p1{
+    color: beige;
+}
+#p2{
+    color: aqua;
+}
+#p3{
+    color: blueviolet;
+}
+
+
+Using class;
+
+<!DOCTYPE html>
+<html>
+	
+<link rel="stylesheet" href="style.css">
+	<body>
+		<head>
+			<h1>This is my website</h1>
+
+		<p id="p1" class="odd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p id="p2" class="even">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>
+		<p id="p3" class="odd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo fugiat error labore culpa saepe a. Earum exercitationem aspernatur, consequuntur, non animi beatae fugiat ex esse explicabo asperiores hic tempore fugit.</p>	
+		</head>
+	</body>
+</html>
+
+
+style.css
+
+body{
+    background-color: rgb(1, 1, 16);
+}
+h1{
+    color: rgb(6, 243, 93);
+}
+.odd{
+    color: rgb(252, 252, 5);
+}
+.even{
+    color: aqua;
+}
